@@ -1,13 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+    String[] nama = {"Adi", "Budi", "Cahyo", "Diana", "Eva"};
+    String namaterpanjang = carinamaterpanjang(nama);
+    System.out.println("Nama Terpanjang Adalah : " + namaterpanjang);
+}
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+public static String carinamaterpanjang(String[] array) {
+    String namaMax = array[0];
+    int maxLen = namaMax.length();                  // (+) tambah: simpan panjang saat ini
+
+    for (String nama : array) {
+        if (nama.length() > maxLen) {               // (±) ganti pembanding ke maxLen
+            namaMax = nama;
+            maxLen = nama.length();                 // (+) update panjang maksimum
+        } else if (nama.length() == maxLen) {       // (+) jika sama panjang, gabungkan
+            if (!namaMax.equals(nama)) {
+                namaMax += ", " + nama;
+            }
+        }
     }
+    return namaMax;
 }

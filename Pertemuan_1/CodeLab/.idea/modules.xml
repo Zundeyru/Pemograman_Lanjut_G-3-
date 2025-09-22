@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CodeLab.iml" filepath="$PROJECT_DIR$/.idea/CodeLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodeLab_1/CodeLab_1.iml" filepath="$PROJECT_DIR$/CodeLab_1/CodeLab_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLab_1_Salah/CodeLab_1_Salah.iml" filepath="$PROJECT_DIR$/CodeLab_1_Salah/CodeLab_1_Salah.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodeLab_2/CodeLab_2.iml" filepath="$PROJECT_DIR$/CodeLab_2/CodeLab_2.iml" />
     </modules>
   </component>
