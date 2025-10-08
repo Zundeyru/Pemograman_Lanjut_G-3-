@@ -6,13 +6,13 @@ void main() {
 
 public static String carinamaterpanjang(String[] array) {
     String namaMax = array[0];
-    int maxLen = namaMax.length();                  // (+) tambah: simpan panjang saat ini
+    int maxLen = namaMax.length();
 
     for (String nama : array) {
-        if (nama.length() > maxLen) {               // (±) ganti pembanding ke maxLen
+        if (nama.length() > maxLen) {
             namaMax = nama;
-            maxLen = nama.length();                 // (+) update panjang maksimum
-        } else if (nama.length() == maxLen) {       // (+) jika sama panjang, gabungkan
+            maxLen = nama.length();
+        } else if (nama.length() == maxLen) {
             if (!namaMax.equals(nama)) {
                 namaMax += ", " + nama;
             }

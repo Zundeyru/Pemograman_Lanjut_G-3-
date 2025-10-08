@@ -26,10 +26,10 @@ public class Main {
             String input = sc.nextLine().trim();
 
             try {
-                double number = Double.parseDouble(input);  // jika bukan angka -> NumberFormatException
-                validatePositive(number);                   // jika ≤0/NaN/∞ -> InvalidNumberException
+                double number = Double.parseDouble(input);
+                validatePositive(number);
                 System.out.println("Valid ✔ Angka positif: " + number);
-                break;                                      // keluar jika sudah valid
+                break;
             } catch (NumberFormatException e) {
                 System.out.println("Error: Input harus berupa angka (contoh: 12 atau 3.14). Coba lagi.");
             } catch (InvalidNumberException e) {

@@ -19,16 +19,14 @@ public class Main {
             String input = sc.nextLine().trim();
 
             try {
-                int age = Integer.parseInt(input); // jika bukan angka -> NumberFormatException
-                validateAge(age);                  // jika tidak valid -> InvalidAgeException
+                int age = Integer.parseInt(input);
+                validateAge(age);
                 System.out.println("Usia valid: " + age);
-                break;                             // keluar kalau sudah valid
+                break;
             } catch (NumberFormatException e) {
                 System.out.println("Error: Input harus berupa angka bulat. Coba lagi.");
-                // loop lanjut otomatis
             } catch (InvalidAgeException e) {
                 System.out.println("Error: " + e.getMessage());
-                // loop lanjut otomatis
             }
         }
 
